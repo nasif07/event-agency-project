@@ -1,0 +1,77 @@
+{
+    "services": [
+        {
+          "id": 1,
+          "name": "Dreamy Wedding Planners",
+          "image": "https://i.ibb.co/rMmFMxV/female-wedding-planner-working-with-bride-groom.jpg",
+          "price": "$3,000",
+          "short_description": "Let us turn your wedding dreams into reality.",
+          "long_description": "At Dreamy Wedding Planners, we specialize in creating magical and stress-free weddings. Our team of experienced event managers will work closely with you to design and execute every aspect of your special day. From selecting the perfect venue to coordinating with vendors and crafting unique decor, we handle it all, ensuring your wedding day is a reflection of your love story.",
+          "bg_color": "#76C1D1"
+        },
+        {
+          "id": 2,
+          "name": "Birthday Bash Organizers",
+          "image": "https://i.ibb.co/r4Tmj3c/happy-people-celebrating-kitchen.jpg",
+          "price": "$1,200",
+          "short_description": "Leave the party planning to us and enjoy a memorable birthday bash.",
+          "long_description": "Birthday Bash Organizers take pride in curating unforgettable birthday parties for all ages. We'll work with you to choose a theme, arrange decorations, book entertainment, and ensure every detail is taken care of. Whether it's a kids' extravaganza or an elegant soirée, we make sure your birthday celebration is stress-free and filled with joy.",
+          "bg_color": "#FF635C"
+        },
+        {
+          "id": 3,
+          "name": "Anniversary Event Coordinators",
+          "image": "https://i.ibb.co/KWmXHQy/waiting-with-friends-midnight.jpg",
+          "price": "$1,500",
+          "short_description": "Celebrate your love with a seamless and romantic anniversary event.",
+          "long_description": "Anniversary Event Coordinators specialize in creating romantic and memorable anniversary celebrations. Our team will handle all the planning and logistics, from selecting the perfect venue to arranging catering and entertainment. You can relax and enjoy your special day while we take care of every detail, ensuring your anniversary is filled with love and cherished moments.",
+          "bg_color": "#5D5167"
+        },
+        {
+          "id": 4,
+          "name": "Engagement Party Planners",
+          "image": "https://i.ibb.co/d778KTj/beautiful-flower-bouquet-arrangement-reception-celebration-hall.jpg",
+          "price": "$2,000",
+          "short_description": "Host an engagement party that reflects your unique love story.",
+          "long_description": "Our Engagement Party Planners are experts at crafting engagement celebrations that are as unique as your love story. We'll help you choose the ideal venue, coordinate with caterers, and plan the perfect atmosphere. Whether you envision an intimate gathering or a grand affair, we ensure your engagement party is a reflection of your love and commitment.",
+          "bg_color": "#FFD700"
+        },
+        {
+          "id": 5,
+          "name": "Retirement Celebration Specialists",
+          "image": "https://i.ibb.co/4VSWHXV/senior-people-celebrating-together.jpg",
+          "price": "$1,800",
+          "short_description": "Retire in style with a celebration that honors your accomplishments.",
+          "long_description": "Retirement Celebration Specialists are dedicated to creating memorable retirement parties that pay tribute to your achievements. From selecting a venue that suits your style to arranging speeches and entertainment, we handle it all. Enjoy a stress-free retirement celebration and embrace this new chapter in your life.",
+          "bg_color": "#FFD700"
+        },
+        {
+          "id": 6,
+          "name": "Baby Shower Event Planners",
+          "image": "https://i.ibb.co/zrq2Gw4/beautiful-baby-shower-concept-with-copy-space.jpg",
+          "price": "$800",
+          "short_description": "Celebrate the upcoming arrival of your bundle of joy with a magical baby shower.",
+          "long_description": "Our Baby Shower Event Planners specialize in creating adorable and heartwarming baby showers. We assist with theme selection, decorations, games, and catering. Let us take care of the details, so you can relax and savor this special time with family and friends.",
+          "bg_color": "#5D5167"
+        },
+        {
+          "id": 7,
+          "name": "Anniversary Party Organizers",
+          "image": "https://i.ibb.co/wwcxyNg/wine-glasses-served-table-with-lightening-candles-table-number-it.jpg",
+          "price": "$1,500",
+          "short_description": "Plan an anniversary party that captures the essence of your love story.",
+          "long_description": "Anniversary Party Organizers are here to ensure your anniversary celebration is filled with love and nostalgia. We'll help you select the perfect venue, coordinate with vendors, and design an atmosphere that reflects your journey together. Trust us to create an anniversary party that honors your love and cherished memories.",
+          "bg_color": "#FF635C"
+        },
+        {
+          "id": 8,
+          "name": "Engagement Ceremony Specialists",
+          "image": "https://i.ibb.co/QQ80kDZ/event-hall-with-white-purple-balloons.jpg",
+          "price": "$2,500",
+          "short_description": "Celebrate your engagement with an enchanting ceremony tailored to your love story.",
+          "long_description": "Engagement Ceremony Specialists excel at designing engagement ceremonies that are as unique as the love you share. We assist with venue selection, decor, rituals, and catering. Let us create an enchanting engagement ceremony that marks the beginning of your beautiful journey together.",
+          "bg_color": "#76C1D1"
+        }
+    ]
+    
+}
