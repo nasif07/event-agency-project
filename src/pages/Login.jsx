@@ -2,10 +2,11 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import swal from 'sweetalert';
+import { AiOutlineGoogle } from "react-icons/ai";
 
 const Login = () => {
 
-    const {googleLogIn} = useContext(AuthContext)
+    const {googleLogIn, googleAccountSingUp} = useContext(AuthContext)
     // console.log(googleLogIn);
 
     const handleLogIn = (e) => {
@@ -21,7 +22,18 @@ const Login = () => {
         .catch(err => {
             console.log(err);
         })
+        
     }
+    const handleGoogleSignIn = () => {
+        googleAccountSingUp()
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    }
+
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row-reverse">
@@ -48,9 +60,11 @@ const Login = () => {
                         </div>
                         <div className="form-control mt-6">
                         <button className="btn bg-[#FCB41E] text-white my-6">Login</button>
-                        <p className="text-center mt-4">Do not have an account <Link className="text=blue-600 font-bold" to="/register">Sign Up</Link></p>
                         </div>
                     </form>
+                    <p className=" text-center">Or Login using google</p>
+                    <button onClick={handleGoogleSignIn} className="flex justify-center"><AiOutlineGoogle className="text-3xl mt-2"></AiOutlineGoogle></button>
+                    <p className="text-center mt-2 mb-5">Do not have an account <Link className="text=blue-600 font-bold" to="/register">Sign Up</Link></p>
                 </div>
             </div>
         </div>

@@ -6,7 +6,6 @@ const AboutWe = () => {
     return (
         <div className="py-12">
             <div>
-
                 <h1 className="font-bold text-5xl text-center py-8"><span className=" text-[#FCB41E]">Hello! </span>We Are an Event <br /> Planning Agency</h1>
                 <p className=" text-lg font-medium text-center text-[#676767]">As the premier event planning company in the area, we know that it is not “one size fits all”. <br /> Each event and client is unique and we believe our services should be as well. We know that it should be <br /> “Can I hire a planner?” not “Can I afford one?”.</p>
             </div>

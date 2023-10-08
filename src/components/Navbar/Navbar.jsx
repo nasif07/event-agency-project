@@ -21,7 +21,7 @@ const Navbar = () => {
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
             }
-            to="/about">About</NavLink></li>
+            to="/contact">Contact</NavLink></li>
         <li><NavLink
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""

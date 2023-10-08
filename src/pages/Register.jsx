@@ -2,11 +2,13 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import swal from 'sweetalert';
+import { AiOutlineGoogle } from "react-icons/ai";
+
 
 const Register = () => {
 
-    const { googleSignUp } = useContext(AuthContext);
-    console.log(googleSignUp);
+    const { googleSignUp, googleAccountSingUp } = useContext(AuthContext);
+    // console.log(googleSignUp);
 
     const handleRegister = e => {
         e.preventDefault();
@@ -15,13 +17,22 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         googleSignUp(email, password)
-        .then(res => {
-            console.log(res);
-            swal("Good job!", "register successful!", "success");
-        })
-        .catch(err => {
-            console.log(err.messege);
-        })
+            .then(res => {
+                console.log(res);
+                swal("Good job!", "register successful!", "success");
+            })
+            .catch(err => {
+                console.log(err.messege);
+            })
+    }
+    const handleGoogleSignIn = () => {
+        googleAccountSingUp()
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err => {
+                console.log(err);
+            })
     }
 
 
@@ -63,9 +74,11 @@ const Register = () => {
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn bg-[#FCB41E] text-white my-6">Sign up</button>
-                            <p className="text-center mt-4">Already have an account <Link className="text=blue-600 font-bold" to="/login">Login</Link></p>
                         </div>
                     </form>
+                    <p className=" text-center">Or Sign Up using google</p>
+                    <button onClick={handleGoogleSignIn} className="flex justify-center"><AiOutlineGoogle className="text-3xl mt-2"></AiOutlineGoogle></button>
+                    <p className="text-center mb-7 mt-2">Already have an account <Link className="text=blue-600 font-bold" to="/login">Login</Link></p>
                 </div>
             </div>
         </div>

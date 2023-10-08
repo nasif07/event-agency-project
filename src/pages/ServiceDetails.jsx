@@ -21,7 +21,7 @@ const ServiceDetails = () => {
     }, [id, services])
 
     console.log(serviceItem);
-    const { image, price, name, long_description, bg_color, short_description } = serviceItem || {};
+    const { image, price, name, long_description, } = serviceItem || {};
 
 
 

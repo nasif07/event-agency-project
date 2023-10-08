@@ -3,14 +3,17 @@ import Layout from "../layout/Layout";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
-import About from "../pages/About";
+import Contact from "../pages/Contact";
 import ServiceDetails from "../pages/ServiceDetails";
 import PrivateServiceDetailes from "../privateRoute/PrivateServiceDetailes";
+import Error from "../pages/Error";
+import PrivateContact from "../privateRoute/PrivateContact";
 
 const Route = createBrowserRouter([
     {
         path: "/",
         element: <Layout></Layout>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: "/",
@@ -25,8 +28,10 @@ const Route = createBrowserRouter([
                 loader: () => fetch('/data.json')
             },
             {
-                path: "/about",
-                element: <About></About>
+                path: "/contact",
+                element: <PrivateContact>
+                    <Contact></Contact>
+                </PrivateContact>
             },
             {
                 path: "/login",
