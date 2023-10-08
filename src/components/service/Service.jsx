@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
     console.log(service);
@@ -10,7 +11,7 @@ const Service = ({ service }) => {
                 <p className="text-white">{short_description}</p>
                 <p className="text-white font-bold text-xl">{price}</p>
                 <div className="card-actions justify-center">
-                    <button className="btn bg-[#FCB41E] text-white">Buy Now</button>
+                    <Link to={`/service/${id}`}><button className="btn bg-[#FCB41E] text-white">see more....</button></Link>
                 </div>
             </div>
         </div>

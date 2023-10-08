@@ -4,10 +4,25 @@ const Navbar = () => {
 
 
     const items = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/login">Login</NavLink></li>
-        <li><NavLink to="/register">Register</NavLink></li>
+        <li><NavLink to="/"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
+            }>Home</NavLink></li>
+        <li><NavLink
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
+            }
+             to="/about">About</NavLink></li>
+        <li><NavLink
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
+            }
+             to="/login">Login</NavLink></li>
+        <li><NavLink
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
+            }
+             to="/register">Register</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100 px-16 max-w-[1600px] mx-auto">
