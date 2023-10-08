@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import BGImage from "../assets/bg.jpg"
 import Services from "../components/services/Services";
 import AboutWe from "../components/aboutWe/AboutWe";
+import BestDeal from "../components/bestDeal/BestDeal";
 
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
             </div>
             <Services services={services}></Services>
             <AboutWe></AboutWe>
-
+            <BestDeal></BestDeal>
         </>
     );
 };
