@@ -9,8 +9,8 @@ const Navbar = () => {
     console.log(user);
 
 
-//     const {photoURL
-// } = user
+    //     const {photoURL
+    // } = user
 
 
 
@@ -23,7 +23,8 @@ const Navbar = () => {
         <li><NavLink to="/"
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
-            }>Home</NavLink></li>
+            }>Home</NavLink>
+            </li>
         <li><NavLink
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
@@ -33,7 +34,13 @@ const Navbar = () => {
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
             }
+            to="/gallery">Gallery</NavLink></li>
+        <li><NavLink
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
+            }
             to="/login">Login</NavLink></li>
+
         <li><NavLink
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
@@ -41,7 +48,7 @@ const Navbar = () => {
             to="/register">Register</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100 px-16 max-w-[1600px] mx-auto">
+        <div className="navbar bg-base-100 md:px-16 max-w-[1600px] mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -51,7 +58,7 @@ const Navbar = () => {
                         {items}
                     </ul>
                 </div>
-                <a className="text-2xl font-bold"><span className="text-[#FCB41E]">EVENT</span> AGENCY</a>
+                <a className=" text-lg md:text-2xl font-bold"><span className="text-[#FCB41E]">EVENT</span> AGENCY</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -59,7 +66,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                
+
                 {
                     user ? <h1 className="mr-2 font-semibold text-lg">{user.displayName}</h1> : <h1></h1>
                 }
@@ -67,7 +74,7 @@ const Navbar = () => {
                     <div className="w-10 rounded-full">
                         {
                             user ? <img src={`${user?.photoURL}`} />
-                            : <img src={userDefaultPicture} />
+                                : <img src={userDefaultPicture} />
                         }
                     </div>
                 </label>

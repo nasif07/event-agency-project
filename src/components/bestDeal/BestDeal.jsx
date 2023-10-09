@@ -10,7 +10,7 @@ const BestDeal = () => {
 
 
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1600px] mx-auto gap-8 md:px-5 lg:px-0">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1600px] mx-auto gap-8 md:px-5 lg:px-0 px-16">
                     <div className="w-full p-4 bg-white  border-gray-200 rounded-lg shadow sm:p-8 dark:bg-[#FCB41E] dark:border-gray-700">
                         <h5 className="mb-4 text-xl  font-medium text-white">Full-Service Planning</h5>
                         <div className="flex items-baseline text-white dark:text-white">

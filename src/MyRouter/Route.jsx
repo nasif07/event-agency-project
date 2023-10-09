@@ -8,6 +8,8 @@ import ServiceDetails from "../pages/ServiceDetails";
 import PrivateServiceDetailes from "../privateRoute/PrivateServiceDetailes";
 import Error from "../pages/Error";
 import PrivateContact from "../privateRoute/PrivateContact";
+import Gallery from "../pages/Gallery";
+import PrivateGallery from "../privateRoute/PrivateGallery";
 
 const Route = createBrowserRouter([
     {
@@ -32,6 +34,12 @@ const Route = createBrowserRouter([
                 element: <PrivateContact>
                     <Contact></Contact>
                 </PrivateContact>
+            },
+            {
+                path: "/gallery",
+                element: <PrivateGallery>
+                    <Gallery></Gallery>
+                </PrivateGallery>
             },
             {
                 path: "/login",

@@ -1,8 +1,12 @@
-# React + Vite
+# Website Name: Event Agency
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Live Link: 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- It is a event management website.
+- Through the website you know about our event management agency.
+- Our website have sign in option and google sign in. by sign in you will go to our private route.
+- Through the website you will see the our package, our work damo.
+- It is full responsive to mobile device and tablet device.
