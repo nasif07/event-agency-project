@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import swal from 'sweetalert';
 import { AiOutlineGoogle } from "react-icons/ai";
+import toast from "react-hot-toast";
 
 
 const Register = () => {
 
-    const { googleSignUp, googleAccountSingUp } = useContext(AuthContext);
+    const { googleSignUp, googleAccountSingUp, handleUpdateProfile } = useContext(AuthContext);
     // console.log(googleSignUp);
 
     const handleRegister = e => {
@@ -16,10 +17,23 @@ const Register = () => {
         const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
+
+        if (password.length < 6 ) {
+            toast.error('password must be at least 6 characters')
+            return;
+        }
+        if(!/^(?=.*[A-Z])(?=.*[@#$%^&+=!]).*$/.test(password)){
+            toast.error('password must be have at least one capital letter and one special character')
+            return;
+        }
         googleSignUp(email, password)
             .then(res => {
                 console.log(res);
-                swal("Good job!", "register successful!", "success");
+                handleUpdateProfile(name, photo)
+                .then(()=>{
+                    swal("Good job!", "register successful!", "success");
+                })
+                
             })
             .catch(err => {
                 console.log(err.messege);

@@ -3,26 +3,30 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import swal from 'sweetalert';
 import { AiOutlineGoogle } from "react-icons/ai";
+import toast from "react-hot-toast";
 
 const Login = () => {
 
-    const {googleLogIn, googleAccountSingUp} = useContext(AuthContext)
+    const { googleLogIn, googleAccountSingUp } = useContext(AuthContext)
     // console.log(googleLogIn);
 
     const handleLogIn = (e) => {
+
+
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email, password);
         googleLogIn(email, password)
-        .then(res => {
-            console.log(res);
-            swal("Good job!", "Login successful!", "success");
-        })
-        .catch(err => {
-            console.log(err);
-        })
-        
+            .then(res => {
+                console.log(res.message);
+                swal("Good job!", "Login successful!", "success");
+            })
+            .catch(err => {
+                console.log(err);
+                toast.error(err.message)
+            })
+
     }
     const handleGoogleSignIn = () => {
         googleAccountSingUp()
@@ -59,7 +63,7 @@ const Login = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                        <button className="btn bg-[#FCB41E] text-white my-6">Login</button>
+                            <button className="btn bg-[#FCB41E] text-white my-6">Login</button>
                         </div>
                     </form>
                     <p className=" text-center">Or Login using google</p>
