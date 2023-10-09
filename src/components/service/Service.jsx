@@ -4,7 +4,8 @@ const Service = ({ service }) => {
     // console.log(service);
     const { id, name, image, price, short_description, bg_color} = service;
     return (
-        <div className="card">
+        <div data-aos="zoom-in"data-aos-easing="linear"
+        data-aos-duration="800" className="card">
             <><img src={image} alt="event" /></>
             <div style={{background: bg_color}} className="card-body">
                 <h2 className="card-title text-white font-bold">{name}</h2>

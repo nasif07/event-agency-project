@@ -15,7 +15,7 @@ import g8 from '../assets/g8.jpg'
 
 const Gallery = () => {
     return (
-        <div className="max-w-[1600px] mx-auto px-16">
+        <div style={{ backgroundColor: "#F5F5F6" }} className="max-w-[1600px] mx-auto px-16">
             <div className=" text-center">
                 <h1 className=" font-bold text-5xl py-6"><span className="text-[#FCB41E]">Welcome</span> to our gallery</h1>
                 <p className="pt-2 text-[#676767] text-lg font-medium pb-8" >Here our some previous work photo of our team.</p>

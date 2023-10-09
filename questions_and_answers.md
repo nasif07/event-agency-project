@@ -15,17 +15,17 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>Answer : here in answer</b></summary>
+<details><summary><b>Answer : A. {}</b></summary>
 <p>
 
-#### Answer: 2nd number?
+###### greeting is a variable. in this variable assigning an empty object by the "greeting = {};"
 
-Markdown is a lightweight markup language based on the formatting conventions
+#### Answer:  A. {}?
 
 
 
-<i>Write your explanation here</i>
-<i>explanarion</i>
+
+<i>greeting is a variable. in this variable assigning an empty object by the "greeting = {};"</i>
 
 </p>
 </details>
@@ -45,12 +45,16 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Answer: C. "12"</b></summary>
 <p>
 
-#### Answer: ?
+###### explanation: n JavaScript, when you use the + operator with a number and a string, it will perform string concatenation, not numeric addition. So, the result of sum(1, "2") will be the string "12", not the number 3.
 
-<i>Write your explanation here</i>
+
+
+#### Answer: C. "12"
+
+<i>n JavaScript, when you use the + operator with a number and a string, it will perform string concatenation, not numeric addition. So, the result of sum(1, "2") will be the string "12", not the number 3.</i>
 
 </p>
 </details>
@@ -71,12 +75,14 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Answer: A. `['🍕', '🍫', '🥑', '🍔']`</b></summary>
 <p>
 
-#### Answer: ?
+###### explanation: only modifies the info objext and has no direct impact on the food array. it will remain unchang and you will see the original array
 
-<i>Write your explanation here</i>
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`?
+
+<i>explanation: only modifies the info objext and has no direct impact on the food array. it will remain unchang and you will see the original array</i>
 
 </p>
 </details>
@@ -96,12 +102,14 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Answer: B: Hi there, undefined</b></summary>
 <p>
 
-#### Answer: ?
+###### explanation: this function contain one parameter but when it is call it not give this parameter through the output is undefined
 
-<i>Write your explanation here</i>
+#### Answer: B: `Hi there, undefined`?
+
+<i>this function contain one parameter but when it is call it not give this parameter through the output is undefined</i>
 
 </p>
 </details>
@@ -124,12 +132,14 @@ console.log(count);
 - C: 3
 - D: 4
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Answer: C: 3</b></summary>
 <p>
 
-#### Answer: ?
+###### explenation: the answer is 3
 
-<i>Write your explanation here</i>
+#### Answer: C: 3
+
+<i>the answer is 3</i>
 
 </p>
 </details>

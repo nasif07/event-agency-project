@@ -22,28 +22,28 @@ const Navbar = () => {
     const items = <>
         <li><NavLink to="/"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
+                isPending ? "pending" : isActive ? "text-[#FCB41E]  underline" : ""
             }>Home</NavLink>
             </li>
         <li><NavLink
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
+                isPending ? "pending" : isActive ? "text-[#FCB41E] underline" : ""
             }
             to="/contact">Contact</NavLink></li>
         <li><NavLink
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
+                isPending ? "pending" : isActive ? "text-[#FCB41E] underline" : ""
             }
             to="/gallery">Gallery</NavLink></li>
         <li><NavLink
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
+                isPending ? "pending" : isActive ? "text-[#FCB41E] underline" : ""
             }
             to="/login">Login</NavLink></li>
 
         <li><NavLink
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "bg-[#FCB41E] text-white underline" : ""
+                isPending ? "pending" : isActive ? "text-[#FCB41E] underline" : ""
             }
             to="/register">Register</NavLink></li>
     </>
@@ -61,7 +61,7 @@ const Navbar = () => {
                 <a className=" text-lg md:text-2xl font-bold"><span className="text-[#FCB41E]">EVENT</span> AGENCY</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="flex gap-6 text-[#0B0B0B] text-lg font-medium menu-horizontal px-1">
                     {items}
                 </ul>
             </div>
